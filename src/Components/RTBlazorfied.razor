@@ -34,7 +34,7 @@ else
         @if (_font == true)
         {
             <div class="rich-text-box-dropdown">
-                <button id="blazing-rich-text-font-button" title="Font" @onclick='() => OpenDropdown("blazing-rich-text-font-button-dropdown")' class="rich-text-box-font-button rich-text-box-dropdown-btn">
+                <button id="blazing-rich-text-font-button" title="Fuente" @onclick='() => OpenDropdown("blazing-rich-text-font-button-dropdown")' class="rich-text-box-font-button rich-text-box-dropdown-btn">
                     Fuente
                 </button>
                 <div id="blazing-rich-text-font-button-dropdown" class="rich-text-box-dropdown-content rich-text-box-font-content rich-text-box-scroll">
@@ -48,7 +48,7 @@ else
         @if (_size == true)
         {
             <div class="rich-text-box-dropdown">
-                <button id="blazing-rich-text-size-button" title="Size (Ctrl + Shift + [<, >])" @onclick='() => OpenDropdown("blazing-rich-text-size-button-dropdown")' class="rich-text-box-size-button rich-text-box-dropdown-btn">
+                <button id="blazing-rich-text-size-button" title="Tamaño (Ctrl + Shift + [<, >])" @onclick='() => OpenDropdown("blazing-rich-text-size-button-dropdown")' class="rich-text-box-size-button rich-text-box-dropdown-btn">
                     Tamaño
                 </button>
                 <div id="blazing-rich-text-size-button-dropdown" class="rich-text-box-dropdown-content rich-text-box-size-content rich-text-box-scroll">
@@ -62,12 +62,12 @@ else
         @if (_format == true)
         {
             <div class="rich-text-box-dropdown">
-                <button id="blazing-rich-text-format-button" title="Format Ctrl + Shift + [D, P, 1, 2...]" @onclick='() => OpenDropdown("blazing-rich-text-format-button-dropdown")' class="rich-text-box-format-button rich-text-box-dropdown-btn">
+                <button id="blazing-rich-text-format-button" title="Formato Ctrl + Shift + [D, P, 1, 2...]" @onclick='() => OpenDropdown("blazing-rich-text-format-button-dropdown")' class="rich-text-box-format-button rich-text-box-dropdown-btn">
                     Formato
                 </button>
                 <div id="blazing-rich-text-format-button-dropdown" class="rich-text-box-dropdown-content rich-text-box-format-content rich-text-box-scroll">
-                    <a id="none" class="rich-text-box-menu-item" style="cursor: pointer" @onclick='() => FormatText("none")'>None</a>
-                    <a id="p" class="rich-text-box-menu-item" style="cursor: pointer" @onclick='() => FormatText("p")'>Paragraph</a>
+                    <a id="none" class="rich-text-box-menu-item" style="cursor: pointer" @onclick='() => FormatText("none")'>Ninguno</a>
+                    <a id="p" class="rich-text-box-menu-item" style="cursor: pointer" @onclick='() => FormatText("p")'>Párrafo</a>
                     <a id="h1" class="rich-text-box-menu-item" style="font-size: 34px; cursor: pointer" @onclick='() => FormatText("h1")'>Título 1</a>
                     <a id="h2" class="rich-text-box-menu-item" style="font-size: 30px; cursor: pointer" @onclick='() => FormatText("h2")'>Título 2</a>
                     <a id="h3" class="rich-text-box-menu-item" style="font-size: 24px; cursor: pointer" @onclick='() => FormatText("h3")'>Título 3</a>

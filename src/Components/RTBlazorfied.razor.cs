@@ -1409,7 +1409,7 @@ public partial class RTBlazorfied
     #region Fonts
     private List<string> Fonts { get; set; } = new List<string>
     {
-        "None",
+        "Ninguno",
         "Arial",
         "Arial Narrow",
         "Baskerville",

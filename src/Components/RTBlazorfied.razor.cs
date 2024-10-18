@@ -859,10 +859,10 @@ public partial class RTBlazorfied
             {
                 _image = buttons.Image;
             }
-            //if (buttons.ImageUpload is not null)
-            //{
-            //    _imageUpload = buttons.ImageUpload;
-            //}
+            if (buttons.ImageUpload is not null)
+            {
+                _imageUpload = buttons.ImageUpload;
+            }
             // If the user did not specify false, keep the button
             if (buttons.Link == true
                 || buttons.Image == true

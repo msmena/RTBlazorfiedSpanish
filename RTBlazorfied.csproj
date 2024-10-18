@@ -5,23 +5,24 @@
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
 	<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-	<Authors>Ryan A. Kueter</Authors>
-	<Company>Ryan A. Kueter</Company>
+	<Authors>Ryan A. Kueter, Matias Mena</Authors>
+	<Company>Ryan A. Kueter, Matias Mena</Company>
 	<Copyright>Ryan A. Kueter</Copyright>
-	  <Description>RT Blazorfied HTML Editor is a free .NET library that allows Blazor developers to easily add a rich text box / html editor to their Blazor application. The editor uses Google's Font Icons. It doesn't reference the icon library. However, it does embed .svg versions of those icons so they are customizable. It also uses the shadow DOM to isolate the HTML from inheriting the existing page styles. Because of that, it provides a preview window for the user to view the live page if the style sheets are applied to the host application. Users are also able to add CSS classes to many components allowing them to customize their appearance.</Description>
-	  <RepositoryUrl>https://github.com/ryankueter/RTBlazorfied</RepositoryUrl>
-	  <PackageProjectUrl>https://github.com/ryankueter/RTBlazorfied</PackageProjectUrl>
-	  <PackageReleaseNotes>Add the ability to remove the resize handle and other minor fixes.</PackageReleaseNotes>
-	  <PackageTags>Rich Text Box;Html Editor;Editor;Blazor</PackageTags>
-	  <Version>1.0.253</Version>
-	  <AssemblyVersion>1.0.253</AssemblyVersion>
-	  <FileVersion>1.0.253</FileVersion>
+	  <Description>Fork of RT Blazorfied HTML Editor is a free .NET library that allows Blazor developers to easily add a rich text box / html editor to their Blazor application. The editor uses Google's Font Icons. It doesn't reference the icon library. However, it does embed .svg versions of those icons so they are customizable. It also uses the shadow DOM to isolate the HTML from inheriting the existing page styles. Because of that, it provides a preview window for the user to view the live page if the style sheets are applied to the host application. Users are also able to add CSS classes to many components allowing them to customize their appearance.</Description>
+	  <RepositoryUrl>https://github.com/msmena/RTBlazorfiedSpanish</RepositoryUrl>
+	  <PackageProjectUrl>https://github.com/msmena/RTBlazorfiedSpanish</PackageProjectUrl>
+	  <PackageReleaseNotes>Bug fixes and convert to spanish</PackageReleaseNotes>
+	  <PackageTags>Rich Text Box;Html Editor;Editor;Blazor;RTBlazorfied</PackageTags>
+	  <Version>1.0.0</Version>
+	  <AssemblyVersion>1.0.0</AssemblyVersion>
+	  <FileVersion>1.0.0</FileVersion>
 	  <RepositoryType>Git</RepositoryType>
-	  <Product>$(AssemblyName)</Product>
+	  <Product>$(AssemblyName)Spanish</Product>
 	  <NeutralLanguage>en</NeutralLanguage>
-	  <Title>RTBlazorfied</Title>
+	  <Title>RTBlazorfiedSpanish</Title>
 	  <PackageReadmeFile>README.md</PackageReadmeFile>
 	  <PackageLicenseFile>LICENSE</PackageLicenseFile>
+	  <PackageId>$(AssemblyName)Spanish</PackageId>
   </PropertyGroup>
 
   <ItemGroup>

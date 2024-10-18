@@ -35,7 +35,7 @@ else
         {
             <div class="rich-text-box-dropdown">
                 <button id="blazing-rich-text-font-button" title="Font" @onclick='() => OpenDropdown("blazing-rich-text-font-button-dropdown")' class="rich-text-box-font-button rich-text-box-dropdown-btn">
-                    Font
+                    Fuente
                 </button>
                 <div id="blazing-rich-text-font-button-dropdown" class="rich-text-box-dropdown-content rich-text-box-font-content rich-text-box-scroll">
                     @foreach (var font in Fonts)
@@ -49,7 +49,7 @@ else
         {
             <div class="rich-text-box-dropdown">
                 <button id="blazing-rich-text-size-button" title="Size (Ctrl + Shift + [<, >])" @onclick='() => OpenDropdown("blazing-rich-text-size-button-dropdown")' class="rich-text-box-size-button rich-text-box-dropdown-btn">
-                    Size
+                    Tamaño
                 </button>
                 <div id="blazing-rich-text-size-button-dropdown" class="rich-text-box-dropdown-content rich-text-box-size-content rich-text-box-scroll">
                     @foreach (var size in Sizes)
@@ -63,17 +63,17 @@ else
         {
             <div class="rich-text-box-dropdown">
                 <button id="blazing-rich-text-format-button" title="Format Ctrl + Shift + [D, P, 1, 2...]" @onclick='() => OpenDropdown("blazing-rich-text-format-button-dropdown")' class="rich-text-box-format-button rich-text-box-dropdown-btn">
-                    Format
+                    Formato
                 </button>
                 <div id="blazing-rich-text-format-button-dropdown" class="rich-text-box-dropdown-content rich-text-box-format-content rich-text-box-scroll">
                     <a id="none" class="rich-text-box-menu-item" style="cursor: pointer" @onclick='() => FormatText("none")'>None</a>
                     <a id="p" class="rich-text-box-menu-item" style="cursor: pointer" @onclick='() => FormatText("p")'>Paragraph</a>
-                    <a id="h1" class="rich-text-box-menu-item" style="font-size: 34px; cursor: pointer" @onclick='() => FormatText("h1")'>Header 1</a>
-                    <a id="h2" class="rich-text-box-menu-item" style="font-size: 30px; cursor: pointer" @onclick='() => FormatText("h2")'>Header 2</a>
-                    <a id="h3" class="rich-text-box-menu-item" style="font-size: 24px; cursor: pointer" @onclick='() => FormatText("h3")'>Header 3</a>
-                    <a id="h4" class="rich-text-box-menu-item" style="font-size: 20px; cursor: pointer" @onclick='() => FormatText("h4")'>Header 4</a>
-                    <a id="h5" class="rich-text-box-menu-item" style="font-size: 18px; cursor: pointer" @onclick='() => FormatText("h5")'>Header 5</a>
-                    <a id="h6" class="rich-text-box-menu-item" style="font-size: 16px; cursor: pointer" @onclick='() => FormatText("h6")'>Header 6</a>
+                    <a id="h1" class="rich-text-box-menu-item" style="font-size: 34px; cursor: pointer" @onclick='() => FormatText("h1")'>Título 1</a>
+                    <a id="h2" class="rich-text-box-menu-item" style="font-size: 30px; cursor: pointer" @onclick='() => FormatText("h2")'>Título 2</a>
+                    <a id="h3" class="rich-text-box-menu-item" style="font-size: 24px; cursor: pointer" @onclick='() => FormatText("h3")'>Título 3</a>
+                    <a id="h4" class="rich-text-box-menu-item" style="font-size: 20px; cursor: pointer" @onclick='() => FormatText("h4")'>Título 4</a>
+                    <a id="h5" class="rich-text-box-menu-item" style="font-size: 18px; cursor: pointer" @onclick='() => FormatText("h5")'>Título 5</a>
+                    <a id="h6" class="rich-text-box-menu-item" style="font-size: 16px; cursor: pointer" @onclick='() => FormatText("h6")'>Título 6</a>
                 </div>
             </div>
         }
@@ -86,7 +86,7 @@ else
             <RTButton Id="blazing-rich-text-bold-button"
                       OnClick="Bold"
                       Icon="@RTBlazorfiedIcons.Bold"
-                      Title="Bold (Ctrl + B)"
+                      Title="Negrita (Ctrl + B)"
                       TextSize="@ButtonTextSize"
                       TextColor="@ButtonTextColor"></RTButton>
         }
@@ -95,7 +95,7 @@ else
             <RTButton Id="blazing-rich-text-italic-button"
                       OnClick="Italic"
                       Icon="@RTBlazorfiedIcons.Italic"
-                      Title="Italic (Ctrl + I)"
+                      Title="Itálica (Ctrl + I)"
                       TextSize="@ButtonTextSize"
                       TextColor="@ButtonTextColor"></RTButton>
         }
@@ -104,7 +104,7 @@ else
             <RTButton Id="blazing-rich-text-underline-button"
                       OnClick="Underline"
                       Icon="@RTBlazorfiedIcons.Underline"
-                      Title="Underline (Ctrl + U)"
+                      Title="Subrayado (Ctrl + U)"
                       TextSize="@ButtonTextSize"
                       TextColor="@ButtonTextColor"></RTButton>
         }
@@ -113,7 +113,7 @@ else
             <RTButton Id="blazing-rich-text-strike-button"
                       OnClick="Strikethrough"
                       Icon="@RTBlazorfiedIcons.Strikethrough"
-                      Title="Strikethrough (Ctrl + D)"
+                      Title="Tachado (Ctrl + D)"
                       TextSize="@ButtonTextSize"
                       TextColor="@ButtonTextColor"></RTButton>
         }
@@ -122,7 +122,7 @@ else
             <RTButton Id="blazing-rich-text-sub-button"
                       OnClick="Subscript"
                       Icon="@RTBlazorfiedIcons.Subscript"
-                      Title="Subscript (Ctrl + =)"
+                      Title="Subíndice (Ctrl + =)"
                       TextSize="@ButtonTextSize"
                       TextColor="@ButtonTextColor"></RTButton>
         }
@@ -131,7 +131,7 @@ else
             <RTButton Id="blazing-rich-text-super-button"
                       OnClick="Superscript"
                       Icon="@RTBlazorfiedIcons.Superscript"
-                      Title="Superscript (Ctrl + Shift + +)"
+                      Title="Superíndice (Ctrl + Shift + +)"
                       TextSize="@ButtonTextSize"
                       TextColor="@ButtonTextColor"></RTButton>
         }
@@ -144,21 +144,21 @@ else
             <RTButton Id="blazing-rich-text-textcolor-button"
                       OnClick="OpenTextColorDialog"
                       Icon="@RTBlazorfiedIcons.TextColor"
-                      Title="Text Color (Ctrl + Shift + C)"
+                      Title="Color de texto (Ctrl + Shift + C)"
                       TextSize="@ButtonTextSize"
                       TextColor="@ButtonTextColor"></RTButton>
 
             <RTButton Id="blazing-rich-text-text-bg-color-button"
                       OnClick="OpenTextBackgroundColorDialog"
                       Icon="@RTBlazorfiedIcons.TextBackgroundColor"
-                      Title="Text Background Color (Ctrl + Shift + B)"
+                      Title="Color de fondo de texto (Ctrl + Shift + B)"
                       TextSize="@ButtonTextSize"
                       TextColor="@ButtonTextColor"></RTButton>
 
             <RTButton Id="blazing-rich-text-textcolor-remove-button"
                       OnClick="RemoveTextColor"
                       Icon="@RTBlazorfiedIcons.RemoveTextFormat"
-                      Title="Remove Color"
+                      Title="Quitar color"
                       TextSize="@ButtonTextSize"
                       TextColor="@ButtonTextColor"></RTButton>
         }
@@ -172,7 +172,7 @@ else
             <RTButton Id="blazing-rich-text-alignleft-button"
                       OnClick="Alignleft"
                       Icon="@RTBlazorfiedIcons.Alignleft"
-                      Title="Align Left (Ctrl + L)"
+                      Title="Alinear a la izquierda (Ctrl + L)"
                       TextSize="@ButtonTextSize"
                       TextColor="@ButtonTextColor"></RTButton>
         }
@@ -181,7 +181,7 @@ else
             <RTButton Id="blazing-rich-text-aligncenter-button"
                       OnClick="Aligncenter"
                       Icon="@RTBlazorfiedIcons.Aligncenter"
-                      Title="Align Center (Ctrl + E)"
+                      Title="Alinear al centro (Ctrl + E)"
                       TextSize="@ButtonTextSize"
                       TextColor="@ButtonTextColor"></RTButton>
         }
@@ -190,7 +190,7 @@ else
             <RTButton Id="blazing-rich-text-alignright-button"
                       OnClick="Alignright"
                       Icon="@RTBlazorfiedIcons.Alignright"
-                      Title="Align Right (Ctrl + R)"
+                      Title="Alinear a la derecha (Ctrl + R)"
                       TextSize="@ButtonTextSize"
                       TextColor="@ButtonTextColor"></RTButton>
         }
@@ -199,7 +199,7 @@ else
             <RTButton Id="blazing-rich-text-alignjustify-button"
                       OnClick="Alignjustify"
                       Icon="@RTBlazorfiedIcons.Alignjustify"
-                      Title="Align Justify (Ctrl + J)"
+                      Title="Justificar (Ctrl + J)"
                       TextSize="@ButtonTextSize"
                       TextColor="@ButtonTextColor"></RTButton>
         }
@@ -212,7 +212,7 @@ else
             <RTButton Id="blazing-rich-text-cut-button"
                       OnClick="Cut"
                       Icon="@RTBlazorfiedIcons.Cut"
-                      Title="Cut (Ctrl + X)"
+                      Title="Cortar (Ctrl + X)"
                       TextSize="@ButtonTextSize"
                       TextColor="@ButtonTextColor"></RTButton>
         }
@@ -221,7 +221,7 @@ else
             <RTButton Id="blazing-rich-text-copy-button"
                       OnClick="Copy"
                       Icon="@RTBlazorfiedIcons.Copy"
-                      Title="Copy (Ctrl + C)"
+                      Title="Copiar (Ctrl + C)"
                       TextSize="@ButtonTextSize"
                       TextColor="@ButtonTextColor"></RTButton>
         }
@@ -230,7 +230,7 @@ else
             <RTButton Id="blazing-rich-text-paste-button"
                       OnClick="Paste"
                       Icon="@RTBlazorfiedIcons.Paste"
-                      Title="Paste (Ctrl + V)"
+                      Title="Pegar (Ctrl + V)"
                       TextSize="@ButtonTextSize"
                       TextColor="@ButtonTextColor"></RTButton>
         }
@@ -239,7 +239,7 @@ else
             <RTButton Id="blazing-rich-text-delete-button"
                       OnClick="Delete"
                       Icon="@RTBlazorfiedIcons.Delete"
-                      Title="Delete"
+                      Title="Borrar"
                       TextSize="@ButtonTextSize"
                       TextColor="@ButtonTextColor"></RTButton>
         }
@@ -248,7 +248,7 @@ else
             <RTButton Id="blazing-rich-text-selectall-button"
                       OnClick="Selectall"
                       Icon="@RTBlazorfiedIcons.Selectall"
-                      Title="Select All (Ctrl + A)"
+                      Title="Seleccionar todo (Ctrl + A)"
                       TextSize="@ButtonTextSize"
                       TextColor="@ButtonTextColor"></RTButton>
         }
@@ -262,7 +262,7 @@ else
             <RTButton Id="blazing-rich-text-orderedlist-button"
                       OnClick="OrderedList"
                       Icon="@RTBlazorfiedIcons.OrderedList"
-                      Title="Ordered List (Ctrl + Shift + O)"
+                      Title="Lista ordenada (Ctrl + Shift + O)"
                       TextSize="@ButtonTextSize"
                       TextColor="@ButtonTextColor"></RTButton>
         }
@@ -271,7 +271,7 @@ else
             <RTButton Id="blazing-rich-text-unorderedlist-button"
                       OnClick="UnorderedList"
                       Icon="@RTBlazorfiedIcons.UnorderedList"
-                      Title="Unordered List (Ctrl + Shift + U)"
+                      Title="Lista no ordenada (Ctrl + Shift + U)"
                       TextSize="@ButtonTextSize"
                       TextColor="@ButtonTextColor"></RTButton>
         }
@@ -280,13 +280,13 @@ else
             <RTButton Id="blazing-rich-text-increase-indent-button"
                       OnClick="IncreaseIndent"
                       Icon="@RTBlazorfiedIcons.IncreaseIndent"
-                      Title="Increase Indent (Tab)"
+                      Title="Aumentar sangría (Tab)"
                       TextSize="@ButtonTextSize"
                       TextColor="@ButtonTextColor"></RTButton>
             <RTButton Id="blazing-rich-text-decrease-indent-button"
                       OnClick="DecreaseIndent"
                       Icon="@RTBlazorfiedIcons.DecreaseIndent"
-                      Title="Decrease Indent (Shift + Tab)"
+                      Title="Disminuir sangría (Shift + Tab)"
                       TextSize="@ButtonTextSize"
                       TextColor="@ButtonTextColor"></RTButton>
         }
@@ -299,14 +299,14 @@ else
             <RTButton Id="blazing-rich-text-link-button"
                       OnClick="OpenLinkDialog"
                       Icon="@RTBlazorfiedIcons.CreateLink"
-                      Title="Insert Link (Ctrl + Shift + K)"
+                      Title="Insertar enlace (Ctrl + Shift + K)"
                       TextSize="@ButtonTextSize"
                       TextColor="@ButtonTextColor"></RTButton>
 
             <RTButton Id="blazing-rich-text-remove-link-button"
                       OnClick="RemoveLink"
                       Icon="@RTBlazorfiedIcons.RemoveLink"
-                      Title="Remove Link"
+                      Title="Quitar enlace"
                       TextSize="@ButtonTextSize"
                       TextColor="@ButtonTextColor"></RTButton>
         }
@@ -315,7 +315,7 @@ else
             <RTButton Id="blazing-rich-text-image-button"
                       OnClick="OpenImageDialog"
                       Icon="@RTBlazorfiedIcons.Image"
-                      Title="Insert Image (Ctrl + Shift + I)"
+                      Title="Insertar imágen (Ctrl + Shift + I)"
                       TextSize="@ButtonTextSize"
                       TextColor="@ButtonTextColor"></RTButton>       
         }
@@ -325,7 +325,7 @@ else
             <RTButton Id="blazing-rich-text-image-upload-button"
                       OnClick="UploadImageDialog"
                       Icon="@RTBlazorfiedIcons.UploadImage"
-                      Title="Upload Image (Ctrl + Shift + &)"
+                      Title="Subir imágen (Ctrl + Shift + &)"
                       TextSize="@ButtonTextSize"
                       TextColor="@ButtonTextColor"></RTButton>
         }
@@ -335,7 +335,7 @@ else
             <RTButton Id="blazing-rich-text-quote-button"
                       OnClick="OpenBlockQuoteDialog"
                       Icon="@RTBlazorfiedIcons.Quote"
-                      Title="Block Quote (Ctrl + Shift + Q)"
+                      Title="Cita en bloque (Ctrl + Shift + Q)"
                       TextSize="@ButtonTextSize"
                       TextColor="@ButtonTextColor"></RTButton>
         }
@@ -344,7 +344,7 @@ else
             <RTButton Id="blazing-rich-text-embed-button"
                       OnClick="OpenMediaDialog"
                       Icon="@RTBlazorfiedIcons.VideoFile"
-                      Title="Insert Media (Ctrl + Shift + M)"
+                      Title="Insertar multimedia (Ctrl + Shift + M)"
                       TextSize="@ButtonTextSize"
                       TextColor="@ButtonTextColor"></RTButton>
         }
@@ -353,7 +353,7 @@ else
             <RTButton Id="blazing-rich-text-table-button"
                       OnClick="OpenTableDialog"
                       Icon="@RTBlazorfiedIcons.Table"
-                      Title="Table (Ctrl + Shift + L)"
+                      Title="Insertar tabla (Ctrl + Shift + L)"
                       TextSize="@ButtonTextSize"
                       TextColor="@ButtonTextColor"></RTButton>
         }
@@ -362,7 +362,7 @@ else
             <RTButton Id="blazing-rich-text-code-block-button"
                       OnClick="OpenCodeBlockDialog"
                       Icon="@RTBlazorfiedIcons.CodeBlocks"
-                      Title="Code Block (Ctrl + Shift + *)"
+                      Title="Bloque de código (Ctrl + Shift + *)"
                       TextSize="@ButtonTextSize"
                       TextColor="@ButtonTextColor"></RTButton>
         }
@@ -375,7 +375,7 @@ else
             <RTButton Id="blazing-rich-text-undo-button"
                       OnClick="Undo"
                       Icon="@RTBlazorfiedIcons.Undo"
-                      Title="Undo (Ctrl + Z)"
+                      Title="Deshacer (Ctrl + Z)"
                       TextSize="@ButtonTextSize"
                       TextColor="@ButtonTextColor"></RTButton>
         }
@@ -384,7 +384,7 @@ else
             <RTButton Id="blazing-rich-text-redo-button"
                       OnClick="Redo"
                       Icon="@RTBlazorfiedIcons.Redo"
-                      Title="Redo (Ctrl + Y)"
+                      Title="Rehacer (Ctrl + Y)"
                       TextSize="@ButtonTextSize"
                       TextColor="@ButtonTextColor"></RTButton>
         }
@@ -398,7 +398,7 @@ else
             <RTSpecialButton Id="blazing-rich-text-source"
                     OnClick="OpenCode"
                     Icon="@RTBlazorfiedIcons.Code"
-                    Title="Html Code (Ctrl + Shift + A)"
+                    Title="Código HTML (Ctrl + Shift + A)"
                     TextSize="@ButtonTextSize"
                     TextColor="@ButtonTextColor"></RTSpecialButton>
             
@@ -409,7 +409,7 @@ else
             <RTSpecialButton Id="blazing-rich-text-preview-button"
                     OnClick="OpenPreview"
                     Icon="@RTBlazorfiedIcons.Preview"
-                    Title="Preview (Ctrl + Shift + V)"
+                    Title="Previsualizar (Ctrl + Shift + V)"
                     TextSize="@ButtonTextSize"
                     TextColor="@ButtonTextColor"></RTSpecialButton>
         }

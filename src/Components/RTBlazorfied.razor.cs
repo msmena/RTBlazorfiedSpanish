@@ -1440,7 +1440,7 @@ public partial class RTBlazorfied
     private async Task Font(string fontName) => await js.InvokeVoidAsync("RTBlazorfied_Method", "font", id, fontName);
     private List<string> Sizes { get; set; } = new List<string>
     {
-        "None",
+        "Ninguno",
         "8",
         "9",
         "10",

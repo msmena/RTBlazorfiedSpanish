@@ -335,7 +335,7 @@ else
             <RTButton Id="blazing-rich-text-quote-button"
                       OnClick="OpenBlockQuoteDialog"
                       Icon="@RTBlazorfiedIcons.Quote"
-                      Title="Cita en bloque (Ctrl + Shift + Q)"
+                      Title="Bloque de cita (Ctrl + Shift + Q)"
                       TextSize="@ButtonTextSize"
                       TextColor="@ButtonTextColor"></RTButton>
         }
@@ -415,82 +415,82 @@ else
         }
         
         <!-- Dialogs -->
-        <RTColorDialog InstanceId="@id" DialogId="rich-text-box-text-color-modal" Title="Text Color" OnClick="InsertTextColor" />
-        <RTColorDialog InstanceId="@id" DialogId="rich-text-box-text-bg-color-modal" Title="Text Background Color" OnClick="InsertTextBackgroundColor" />
+        <RTColorDialog InstanceId="@id" DialogId="rich-text-box-text-color-modal" Title="Color de texto" OnClick="InsertTextColor" />
+        <RTColorDialog InstanceId="@id" DialogId="rich-text-box-text-bg-color-modal" Title="Color de fondo del texto" OnClick="InsertTextBackgroundColor" />
 
-        <RTDialog InstanceId="@id" DialogId="rich-text-box-table-modal" Title="Table" OnClick="InsertTable">
+        <RTDialog InstanceId="@id" DialogId="rich-text-box-table-modal" Title="Tabla" OnClick="InsertTable">
             <div class="clearfix">
                 <div class="rich-text-box-form-left">
-                    <label for="columns">Columns</label>
+                    <label for="columns">Columnas</label>
                     <input type="number" id="rich-text-box-table-columns" class="rich-text-box-form-element" name="columns" min="0" max="10000" value="0" autocomplete="off">                    
                 </div>
                 <div class="rich-text-box-form-right">
-                    <label for="rows">Rows</label>
+                    <label for="rows">Filas</label>
                     <input type="number" id="rich-text-box-table-rows" class="rich-text-box-form-element" name="rows" min="0" max="10000" value="0" autocomplete="off">
-                    <label for="width">Width</label>
+                    <label for="width">Ancho</label>
                     <input type="text" id="rich-text-box-table-width" class="rich-text-box-form-element" name="width" placeholder="500px">
                 </div>
                 <div class="rich-text-box-form-left">
                     @if (!MmodalRemoveCSSClassInputs)
                     {
-                        <label for="classes">CSS Classes</label>
-                        <input class="rich-text-box-form-element" type="text" id="rich-text-box-table-classes" placeholder="class1 class2 class3" name="classes">
+                        <label for="classes">CSS Clases</label>
+                        <input class="rich-text-box-form-element" type="text" id="rich-text-box-table-classes" placeholder="clase 1 clase 2 clase 3" name="classes">
                     }
                 </div>
             </div>            
         </RTDialog>
 
-        <RTDialog InstanceId="@id" DialogId="rich-text-box-embed-modal" Title="Media" OnClick="InsertMedia">
+        <RTDialog InstanceId="@id" DialogId="rich-text-box-embed-modal" Title="Multimedia" OnClick="InsertMedia">
             <div class="clearfix">
                 <div class="rich-text-box-form-left">
-                    <label for="source">Source</label>
+                    <label for="source">Fuente</label>
                     <input class="rich-text-box-form-element" type="text" id="rich-text-box-embed-source" name="source" placeholder="e.g., /videos/sample.mp4, /videos/sample.mp3, files/id_card.pdf" autocomplete="off">
-                    <label for="type">Type</label>
+                    <label for="type">Tipo</label>
                     <input class="rich-text-box-form-element" type="text" id="rich-text-box-embed-type" name="type" placeholder="e.g., video/mp4, audio/mp3, application/pdf, or text/html" autocomplete="off">
                 </div>
                 <div class="rich-text-box-form-right">
-                    <label for="width">Width</label>
+                    <label for="width">Ancho</label>
                     <input class="rich-text-box-form-element" type="text" id="rich-text-box-embed-width" name="width" placeholder="450" autocomplete="off">
-                    <label for="height">Height</label>
+                    <label for="height">Altura</label>
                     <input class="rich-text-box-form-element" type="text" id="rich-text-box-embed-height" name="height" placeholder="250" autocomplete="off">
                 </div>
                 <div class="rich-text-box-form-left">
                     @if (!MmodalRemoveCSSClassInputs)
                     {
-                        <label for="classes">CSS Classes</label>
-                        <input class="rich-text-box-form-element" type="text" id="rich-text-box-embed-css-classes" placeholder="class1 class2 class3" name="classes">
+                        <label for="classes">CSS Clases</label>
+                        <input class="rich-text-box-form-element" type="text" id="rich-text-box-embed-css-classes" placeholder="clase 1 clase 2 clase 3" name="classes">
                     }
                 </div>
             </div>            
         </RTDialog>
 
-        <RTDialog InstanceId="@id" DialogId="rich-text-box-code-block-modal" Title="Code Block" OnClick="InsertCodeBlock">
+        <RTDialog InstanceId="@id" DialogId="rich-text-box-code-block-modal" Title="Bloque de código" OnClick="InsertCodeBlock">
             <div class="clearfix">
-                <label for="code">Code Block</label>
+                <label for="code">Bloque de código</label>
                 <textarea rows="6" cols="50" class="rich-text-box-form-element rich-text-box-code rich-text-box-scroll" id="rich-text-box-code" name="code" spellcheck="false" />
                 <div class="rich-text-box-form-left">
                     @if (!MmodalRemoveCSSClassInputs)
                     {
-                        <label for="classes">CSS Classes</label>
-                        <input class="rich-text-box-form-element" type="text" id="rich-text-box-code-css-classes" placeholder="class1 class2 class3" name="classes">
+                        <label for="classes">CSS Clases</label>
+                        <input class="rich-text-box-form-element" type="text" id="rich-text-box-code-css-classes" placeholder="clase 1 clase 2 clase 3" name="classes">
                     }
                 </div>
             </div>           
         </RTDialog>
 
-        <RTDialog InstanceId="@id" DialogId="rich-text-box-block-quote-modal" Title="Block Quote" OnClick="InsertQuote">
+        <RTDialog InstanceId="@id" DialogId="rich-text-box-block-quote-modal" Title="Bloque de cita" OnClick="InsertQuote">
             <div class="clearfix">
                 <div class="rich-text-box-form-left">
-                    <label for="quote">Quote</label>
+                    <label for="quote">Bloque</label>
                     <textarea rows="6" cols="50" class="rich-text-box-form-element rich-text-box-scroll" id="rich-text-box-quote" name="quote" />
                 </div>
                 <div class="rich-text-box-form-right">
-                    <label for="cite">Cite</label>
+                    <label for="cite">Cita</label>
                     <input class="rich-text-box-form-element" type="text" id="rich-text-box-cite" name="cite" placeholder="https://www..." autocomplete="off">
                     @if (!MmodalRemoveCSSClassInputs)
                     {
-                        <label for="classes">CSS Classes</label>
-                        <input class="rich-text-box-form-element" type="text" id="rich-text-box-quote-css-classes" placeholder="class1 class2 class3" name="classes">
+                        <label for="classes">CSS Clases</label>
+                        <input class="rich-text-box-form-element" type="text" id="rich-text-box-quote-css-classes" placeholder="clase 1 clase 2 clase 3" name="classes">
                     }
                 </div>
             </div>            
@@ -499,78 +499,78 @@ else
         <RTDialog InstanceId="@id" DialogId="rich-text-box-image-modal" Title="Image" OnClick="InsertImage">
             <div class="clearfix">
                 <div class="rich-text-box-form-left">
-                    <label for="webaddress">Web Address</label>
+                    <label for="webaddress">Enlace web</label>
                     <input class="rich-text-box-form-element" type="text" id="rich-text-box-image-webaddress" name="webaddress" placeholder="https://www..." autocomplete="off">
-                    <label for="alttext">Alternative Text</label>
+                    <label for="alttext">Texto alternativo</label>
                     <input class="rich-text-box-form-element" type="text" id="rich-text-box-image-alt-text" name="alttext" autocomplete="off">
                 </div>
                 <div class="rich-text-box-form-right">
-                    <label for="imagewidth">Image Width</label>
+                    <label for="imagewidth">Ancho</label>
                     <input class="rich-text-box-form-element" type="text" id="rich-text-box-image-width" name="imagewidth" placeholder="400" autocomplete="off">
-                    <label for="imageheight">Image Height</label>
+                    <label for="imageheight">Alto</label>
                     <input class="rich-text-box-form-element" type="text" id="rich-text-box-image-height" name="imageheight" autocomplete="off">
                 </div>
                 <div class="rich-text-box-form-left">
                     @if (!MmodalRemoveCSSClassInputs)
                     {
-                        <label for="classes">CSS Classes</label>
-                        <input class="rich-text-box-form-element" type="text" id="rich-text-box-image-css-classes" placeholder="class1 class2 class3" name="classes">
+                        <label for="classes">CSS Clases</label>
+                        <input class="rich-text-box-form-element" type="text" id="rich-text-box-image-css-classes" placeholder="clase 1 clase 2 clase 3" name="classes">
                     }
                 </div>
             </div>
         </RTDialog>
 
-        <RTDialog InstanceId="@id" DialogId="rich-text-box-upload-image-modal" Title="Upload / Embed Image" OnClick="UploadImage">
+        <RTDialog InstanceId="@id" DialogId="rich-text-box-upload-image-modal" Title="Subir / Embeber Image" OnClick="UploadImage">
             <div class="clearfix">
                 <div class="rich-text-box-form-left">
                     <div style="height: 40px; padding: 20px 0 10px 0;">
                         <input type="file" id="rich-text-box-upload-image-file" @onchange="HandleFileSelected" hidden />
-                        <label for="rich-text-box-upload-image-file" class="rich-text-box-upload-btn">Choose File</label>
-                        <span id="rich-text-box-upload-image-file-chosen">No file chosen</span><br />
+                        <label for="rich-text-box-upload-image-file" class="rich-text-box-upload-btn">Elegir archivo</label>
+                        <span id="rich-text-box-upload-image-file-chosen">No se ha seleccionado archivo</span><br />
                     </div>
-                    <label for="imageheight">Image Height</label>
+                    <label for="imageheight">Altura</label>
                     <input class="rich-text-box-form-element" type="text" id="rich-text-box-upload-image-height" name="imageheight" autocomplete="off">
                 </div>
                 <div class="rich-text-box-form-right">
-                    <label for="imagewidth">Image Width</label>
+                    <label for="imagewidth">Ancho</label>
                     <input class="rich-text-box-form-element" type="text" id="rich-text-box-upload-image-width" name="imagewidth" placeholder="400" autocomplete="off">
-                    <label for="alttext">Alternative Text</label>
+                    <label for="alttext">Texto alternativo</label>
                     <input class="rich-text-box-form-element" type="text" id="rich-text-box-upload-image-alt-text" name="alttext" autocomplete="off">
                 </div>
                 <div class="rich-text-box-form-left">
                     @if (!MmodalRemoveCSSClassInputs)
                     {
-                        <label for="classes">CSS Classes</label>
-                        <input class="rich-text-box-form-element" type="text" id="rich-text-box-upload-image-css-classes" placeholder="class1 class2 class3" name="classes">
+                        <label for="classes">CSS Clases</label>
+                        <input class="rich-text-box-form-element" type="text" id="rich-text-box-upload-image-css-classes" placeholder="clase 1 clase 2 clase 3" name="classes">
                     }
                 </div>
             </div>
         </RTDialog>
 
-        <RTDialog InstanceId="@id" DialogId="rich-text-box-link-modal" Title="Link" OnClick="InsertLink">
+        <RTDialog InstanceId="@id" DialogId="rich-text-box-link-modal" Title="Enlace" OnClick="InsertLink">
             <div class="clearfix">
                 <div class="rich-text-box-form-left">
-                    <label for="webaddress">Web Address</label>
+                    <label for="webaddress">Enlace web</label>
                     <input class="rich-text-box-form-element" type="text" id="rich-text-box-link-webaddress" name="webaddress" placeholder="https://www..." autocomplete="off">
                 </div>
                 <div class="rich-text-box-form-right">
-                    <label for="linktext">Link Text</label>
+                    <label for="linktext">Texto</label>
                     <input class="rich-text-box-form-element" type="text" id="rich-text-box-linktext" name="linktext" autocomplete="off">
                     <label style="display: flex; align-items: center; margin-bottom: 12px;">
                         <input class="rich-text-box-form-checkbox" id="rich-text-box-link-modal-newtab" type="checkbox" name="opentab" />
-                        Open in New Tab
+                        Abrir en nueva pestaña
                     </label>
                 </div>
                 <div class="rich-text-box-form-left">
                     @if (!MmodalRemoveCSSClassInputs)
                     {
-                        <label for="classes">CSS Classes</label>
-                        <input class="rich-text-box-form-element" type="text" id="rich-text-box-link-css-classes" placeholder="class1 class2 class3" name="classes">
+                        <label for="classes">CSS Clases</label>
+                        <input class="rich-text-box-form-element" type="text" id="rich-text-box-link-css-classes" placeholder="clase 1 clase 2 clase 3" name="classes">
                     }
                 </div>
             </div>
         </RTDialog>
     </div>
-    <RTPreviewDialog InstanceId="@id" DialogId="@GetPreviewId()" Title="Preview" OnClick="InsertLink" />
+    <RTPreviewDialog InstanceId="@id" DialogId="@GetPreviewId()" Title="Vista previa" OnClick="InsertLink" />
     <div id="@GetShadowId()"></div>
 }

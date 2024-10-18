@@ -1729,19 +1729,19 @@ class RTBlazorfiedNodeManager {
         /* Menus */
         const formatButton = this.shadowRoot.getElementById("blazing-rich-text-format-button");
         if (formatButton != null) {
-            formatButton.innerText = "Format";
+            formatButton.innerText = "Formato";
             this.formatSelected = false;
         }
 
         const fontButton = this.shadowRoot.getElementById("blazing-rich-text-font-button");
         if (fontButton != null) {
-            fontButton.innerText = "Font";
+            fontButton.innerText = "Fuente";
             this.fontSelected = false;
         }
 
         const sizeButton = this.shadowRoot.getElementById("blazing-rich-text-size-button");
         if (sizeButton != null) {
-            sizeButton.innerText = "Size";
+            sizeButton.innerText = "Tamaño";
             this.fontSizeSelected = false;
         }
 
@@ -1967,19 +1967,19 @@ class RTBlazorfiedNodeManager {
 
         const formatButton = this.shadowRoot.getElementById("blazing-rich-text-format-button");
         if (formatButton != null) {
-            formatButton.innerText = "Format";
+            formatButton.innerText = "Formato";
             this.formatSelected = false;
         }
 
         const fontButton = this.shadowRoot.getElementById("blazing-rich-text-font-button");
         if (fontButton != null) {
-            fontButton.innerText = "Font";
+            fontButton.innerText = "Fuente";
             this.fontSelected = false;
         }
 
         const sizeButton = this.shadowRoot.getElementById("blazing-rich-text-size-button");
         if (sizeButton != null) {
-            sizeButton.innerText = "Size";
+            sizeButton.innerText = "Tamaño";
             this.fontSizeSelected = false;
         }
     }
